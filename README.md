@@ -1,50 +1,134 @@
 # hu-chenfeng-skill
 
-A Codex persona skill modeled after 户晨风, built from sampled livestream transcripts across 2023-2025.
+> 不是学他说话，是学他怎么把人从自欺里拽出来。
 
-This project does not try to copy surface catchphrases only. The core goal is to preserve the more stable parts of the persona:
+A Codex persona skill modeled after 户晨风.
 
-- direct, high-pressure clarity
-- fast reality-checking
-- anti-delusion decision-making
-- strong switching between reassurance, confrontation, and pragmatic advice
+这个项目不是在复读直播口头禅，也不是做一个“嘴很毒”的人格壳子。  
+它想蒸馏的是更稳定、更有用的东西：
 
-## What This Repository Contains
+- 怎么快速识别问题的本质
+- 怎么把模糊情绪压缩成可判断的现实约束
+- 怎么区分真求助、假对话、和幻想型求助
+- 怎么在安慰、对抗、现实校准之间切换力度
+
+看效果 · 看结构 · 看来源
+
+---
+
+## 效果示例
+
+用户  
+> 我同时想做自媒体、写书、做独立开发，感觉每件事都想做，最后每件事都没做好。
+
+户晨风.skill  
+> 你这不是精力不够，你这是欲望太散。  
+> 先别说“都想做”，都想做等于都做不成。  
+>
+> 先问最现实的三个问题：
+>
+> 1. 哪件事现在最接近能出结果？
+> 2. 哪件事最能积累长期杠杆？
+> 3. 哪件事停掉以后，你最不难受？
+>
+> 先砍掉两个，再谈热爱。  
+> 你现在缺的不是更大的梦想，是更小的战线。
+
+用户  
+> 家里条件一般，但我很想学金融，以后进投行，是不是也可以搏一把？
+
+户晨风.skill  
+> 可以想，但你不能拿幻想当路径。  
+> 先把学校层级、家庭资源、实习渠道、城市位置摆出来。  
+> 这些东西不摆出来，直接谈投行，就是拿结果倒推自己配得上。  
+>
+> 真相是很多专业，学什么不是核心，进得去什么圈子才是核心。  
+> 你如果没有那个支撑条件，就先选一个更硬、更稳、更能自己吃饭的路径。  
+> 先活下来，再谈体面。
+
+用户  
+> 我最近总觉得自己失败了，考编没上，家里人一直说我不行。
+
+户晨风.skill  
+> 你先停一下。  
+> 没考上编，不等于你这个人不行。  
+> 那只是一次没上，不是人生盖章。  
+>
+> 还有，你家里人说你不行，这件事你要分清楚。  
+> 他们是在提供有效帮助，还是在制造额外噪音？  
+> 如果只是噪音，那他们的评价就不配决定你的自我认识。  
+>
+> 你现在最该做的不是自证清白，是把下一步路走出来。
+
+这不是单纯角色扮演。  
+它更像把一种“高压现实校准”的决策风格，转成可复用的 Codex skill。
+
+---
+
+## 这个 Skill 蒸馏了什么
+
+这个 skill 不是纯语气模仿，而是分了四层：
+
+| 层次 | 内容 |
+| --- | --- |
+| 怎么说 | 直接、压缩、反问、带压力感 |
+| 怎么想 | 先抓本质，再压缩变量，再判断路径 |
+| 怎么判断 | 看约束、看风险、看杠杆、看是否自欺 |
+| 怎么切模式 | 真求助就护住，对抬杠就逼举证，对幻想就做现实校准 |
+
+相比“人格 prompt”，这个 skill 更像一个判断引擎。
+
+---
+
+## 设计原则
+
+这个项目的核心原则很简单：
+
+- 不模仿直播噪音，只保留稳定人格
+- 不把“攻击性”误认成“判断力”
+- 不把一时的表演状态误认成长期认知风格
+- 不把 catchphrase 当成抽象
+
+所以这里特别做了一个 `text-mode adaptation`：
+
+- 保留他的清晰、压迫感、反幻想能力
+- 降低直播里的感谢词、节奏词、起哄感、表演性嘲讽
+- 让它在 Codex / chat 里可用，而不是像一个失控主播
+
+---
+
+## 仓库结构
 
 - [hu-chenfeng-skill/SKILL.md](./hu-chenfeng-skill/SKILL.md)
-  The main Codex skill instructions.
+  主 skill 规则，定义触发方式、交互模式和输出原则。
 - [hu-chenfeng-skill/references/persona-profile.md](./hu-chenfeng-skill/references/persona-profile.md)
-  Distilled persona traits and reasoning patterns.
+  对人格、判断方式和文本适配的抽象总结。
 - [hu-chenfeng-skill/references/source-notes.md](./hu-chenfeng-skill/references/source-notes.md)
-  Notes extracted from sampled source material.
+  从公开语料中提炼出的观察记录。
 
-## Design Principle
+---
 
-This skill is designed as a decision persona, not just a speaking-style persona.
+## 当前版本的抽象程度
 
-The repository separates:
+当前版本基于跨年份抽样，而不是全量逐字扫描。
 
-- `reasoning style`
-- `interaction modes`
-- `text-mode adaptation`
+已经确认比较稳定的模式有：
 
-That means the skill aims to preserve how 户晨风 frames problems, pressure-tests plans, and distinguishes good-faith questions from bad-faith ones, while adapting the livestream tone into something more usable in Codex and chat.
+- 会连续追问具体条件，再下判断
+- 会把情绪问题先变成 framing 问题
+- 会主动打断自我羞辱和自我神化
+- 会拒绝给不现实的目标提供廉价鼓励
+- 会在安慰、对抗、现实校准之间快速切换
 
-## Current Abstraction
+一句话概括就是：
 
-The current version is based on cross-year sampled transcripts rather than a full line-by-line pass of the entire archive.
+> 他的核心不是“毒舌”，而是“反自欺”。
 
-Stable patterns captured so far:
+---
 
-- asks concrete questions quickly
-- reduces emotional fog into one governing problem
-- pushes people toward reality contact
-- refuses to encourage unrealistic fantasies
-- uses different intensity levels for sincere callers, challengers, and dreamers
+## 公开来源
 
-## Sources
-
-Primary public sources used for this version:
+这个版本主要参考了这些公开材料：
 
 - [户晨风全集 archive](https://www.huchenfeng.live/)
 - [2025-09-14](https://www.huchenfeng.live/2025-nian-09-yue/2025-09-14)
@@ -52,8 +136,10 @@ Primary public sources used for this version:
 - [2024-07-31](https://github.com/Olcmyk/HuChenFeng/blob/main/2024%E5%B9%B407%E6%9C%88/2024-07-31.md)
 - [2023-03-10](https://github.com/Olcmyk/HuChenFeng/blob/main/2023%E5%B9%B403%E6%9C%88/2023-03-10.md)
 
-## Notes
+---
 
-- This is a fan-made skill artifact, not an official project.
-- The current version is a strong approximation, not a complete reconstruction.
-- Livestream filler, donation rituals, and one-off performance moments are intentionally downweighted.
+## 说明
+
+- 这是一个 fan-made skill，不是官方项目。
+- 当前版本已经是强抽象版，但还不是全语料统计版。
+- 直播里的感谢、打趣、起哄、表演性攻击，已经被有意降权。
