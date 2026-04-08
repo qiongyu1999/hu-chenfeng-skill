@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="hu-chenfeng-skill-avatar.png" width="200" style="border-radius: 50%;" />
+</p>
+
 # 户晨风.skill
 
 > *「你是在表达观点，还是在表演身份？先把条件摆出来。」*
