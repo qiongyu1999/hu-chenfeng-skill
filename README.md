@@ -246,11 +246,7 @@ cp -r hu-chenfeng-skill/hu-chenfeng-skill ~/.claude/skills/
 
 ### 一手来源
 
-[户晨风全集 archive](https://www.huchenfeng.live/)（全量直播文字稿） · [2025-09-14](https://www.huchenfeng.live/2025-nian-09-yue/2025-09-14) · [2025-03-31](https://www.huchenfeng.live/2025-nian-03-yue/2025-03-31) · [2024-07-31](https://github.com/Olcmyk/HuChenFeng/blob/main/2024%E5%B9%B407%E6%9C%88/2024-07-31.md) · [2023-03-10](https://github.com/Olcmyk/HuChenFeng/blob/main/2023%E5%B9%B403%E6%9C%88/2023-03-10.md)
-
-### 二手来源
-
-[GitHub Olcmyk/HuChenFeng](https://github.com/Olcmyk/HuChenFeng)（文字稿整理仓库）
+[户晨风全集](https://www.huchenfeng.live/)（全量直播文字稿，GitHub 镜像：[Olcmyk/HuChenFeng](https://github.com/Olcmyk/HuChenFeng)） · 本项目抽样切面：[2025-09-14](https://www.huchenfeng.live/2025-nian-09-yue/2025-09-14) · [2025-03-31](https://www.huchenfeng.live/2025-nian-03-yue/2025-03-31) · [2024-07-31](https://github.com/Olcmyk/HuChenFeng/blob/main/2024%E5%B9%B407%E6%9C%88/2024-07-31.md) · [2023-03-10](https://github.com/Olcmyk/HuChenFeng/blob/main/2023%E5%B9%B403%E6%9C%88/2023-03-10.md)
 
 信息源已排除知乎 / 微信公众号 / 百度百科。当前版本基于跨年份抽样，不是全量语料重建。
 
