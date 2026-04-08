@@ -1,16 +1,16 @@
 # hu-chenfeng-skill
 
-一个基于公开语料整理的通用 AI persona skill，目标是提炼户晨风在公开表达中最具辨识度的判断风格、交互方式与语言特征，并将其转化为可复用的人格提示资产。
+一个基于公开语料整理的通用 AI persona skill，参考 `colleague-skill` 的方法，将户晨风拆分为可复用的 `Work Skill + Persona` 双层结构，并把他的高辨识度表达与稳定判断方式整理为可迁移的人格提示资产。
 
 ## 项目简介
 
 `hu-chenfeng-skill` 不是简单的语气模仿，也不是对单场直播内容的拼接复述。  
-本项目关注的是两类信息的稳定提炼：
+它采用类似 `colleague-skill` 的制作思路：把一个公众人物的公开表达拆成两部分。
 
-- 高辨识度的公开入口  
-  例如“苹果人 / 安卓人”“没啥高论”“先把条件摆出来”等具有强识别性的表达框架。
-- 更稳定的判断内核  
-  例如反自欺、现实校准、条件审查、区分真求助与姿态化表达。
+- `Part A — Work Skill`
+  负责“他会怎么判断问题、怎么追问条件、怎么拆姿态、怎么给结论”。
+- `Part B — Persona`
+  负责“他像什么人、会怎么说、在什么场景下会切换什么强度”。
 
 项目最终产出是一个可迁移、可复用、尽量平台无关的 persona skill，可用于聊天机器人、AI 助手、提示词系统、角色化工作流等场景。
 
@@ -53,24 +53,25 @@
 
 ## 方法说明
 
-本项目采用“高辨识度入口 + 稳定判断内核”的双层提炼方法。
+本项目采用“`Work Skill + Persona`”的双层提炼方法。
 
-第一层关注公众识别度：
+其中：
 
-- 哪些表达一出现，用户就会立刻联想到户晨风
-- 哪些争议性分类方式构成其最显著的传播标签
+- `Work Skill`
+  负责提炼跨场景稳定的判断逻辑，例如苹果人 / 安卓人的事实识别、先把条件摆出来、你有没有高论、别做梦了等判断框架。
+- `Persona`
+  负责提炼更具公众辨识度的人格特征，例如反问方式、压迫感、识别性短句、对真求助与抬杠者的不同态度。
 
-第二层关注稳定性：
-
-- 哪些判断模式跨年份、跨场景反复出现
-- 哪些内容属于直播容器噪音，哪些属于长期稳定的人格结构
-
-因此，本项目既不会只做“热梗复读”，也不会把人格抽象到失去辨识度。
+这意味着本项目既不会只做“热梗复读”，也不会把人格抽象到失去辨识度。
 
 ## 仓库结构
 
 - [hu-chenfeng-skill/SKILL.md](./hu-chenfeng-skill/SKILL.md)  
-  主 skill 文件，定义人格定位、交互模式、识别性表达和输出规则。
+  入口文件，负责组合 `work.md` 与 `persona.md`。
+- [hu-chenfeng-skill/work.md](./hu-chenfeng-skill/work.md)  
+  `Part A — Work Skill`，负责判断逻辑、追问框架和输出方式。
+- [hu-chenfeng-skill/persona.md](./hu-chenfeng-skill/persona.md)  
+  `Part B — Persona`，负责人格边界、说话方式和模式切换。
 - [hu-chenfeng-skill/references/persona-profile.md](./hu-chenfeng-skill/references/persona-profile.md)  
   对人格特征、推理模式、语言风格和文本适配原则的结构化总结。
 - [hu-chenfeng-skill/references/source-notes.md](./hu-chenfeng-skill/references/source-notes.md)  
@@ -82,6 +83,7 @@
 
 - 明确高辨识度入口
 - 明确稳定判断内核
+- 拆分 `Work Skill + Persona`
 - 建立文本适配规则
 - 将“直播人格”与“可复用 skill 人格”区分开
 
