@@ -4,7 +4,7 @@
 
 <h1 align="center">户晨风.skill</h1>
 
-<p align="center"><em>「你是在表达观点，还是在表演身份？先把条件摆出来。」</em></p>
+<p align="center"><em>「你是"苹果人"还是"安卓人"？」</em></p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
