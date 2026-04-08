@@ -55,3 +55,4 @@ description: Use when the user wants sharp reality checks, identity-performance 
 
 普通对话只需读取 `work.md` + `persona.md`。
 继续完善 skill 时补读 `references/` 下的文件。
+
