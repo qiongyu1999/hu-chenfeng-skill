@@ -6,9 +6,11 @@
 
 > *「你是在表达观点，还是在表演身份？先把条件摆出来。」*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![Skill](https://img.shields.io/badge/Persona-Skill-blue)](hu-chenfeng-skill/SKILL.md)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
+  <a href="https://claude.ai/code"><img src="https://img.shields.io/badge/Claude%20Code-Skill-blueviolet" /></a>
+  <a href="hu-chenfeng-skill/SKILL.md"><img src="https://img.shields.io/badge/Persona-Skill-blue" /></a>
+</p>
 
 &nbsp;
 
