@@ -2,9 +2,9 @@
   <img src="hu-chenfeng-skill-avatar.png" width="200" style="border-radius: 50%;" />
 </p>
 
-# 户晨风.skill
+<h1 align="center">户晨风.skill</h1>
 
-> *「你是在表达观点，还是在表演身份？先把条件摆出来。」*
+<p align="center"><em>「你是在表达观点，还是在表演身份？先把条件摆出来。」</em></p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
@@ -12,18 +12,18 @@
   <a href="hu-chenfeng-skill/SKILL.md"><img src="https://img.shields.io/badge/Persona-Skill-blue" /></a>
 </p>
 
-&nbsp;
+<p align="center"><strong>户晨风的认知操作系统。不是语气模仿，不是热梗复读，是可运行的判断框架。</strong></p>
 
-**户晨风的认知操作系统。不是语气模仿，不是热梗复读，是可运行的判断框架。**
-
-&nbsp;
-
-基于 [户晨风全集 archive](https://www.huchenfeng.live/) 横跨 3 年的完整直播文字稿库、
-4 个代表性时间切面的逐句深度分析、近 20 条跨年份稳定行为模式、
-9 条核心信念与 9 种推理路径的交叉验证，
+<p align="center">
+基于 <a href="https://www.huchenfeng.live/">户晨风全集 archive</a> 横跨 3 年的完整直播文字稿库、<br/>
+4 个代表性时间切面的逐句深度分析、近 20 条跨年份稳定行为模式、<br/>
+9 条核心信念与 9 种推理路径的交叉验证，<br/>
 提炼 4 个标志性判断框架、8 条决策启发式、5 层人格架构和完整的表达 DNA。
+</p>
 
-[看效果](#效果示例) · [安装](#安装) · [蒸馏了什么](#蒸馏了什么) · [调研来源](#调研来源)
+<p align="center">
+  <a href="#效果示例">看效果</a> · <a href="#安装">安装</a> · <a href="#蒸馏了什么">蒸馏了什么</a> · <a href="#调研来源">调研来源</a>
+</p>
 
 &nbsp;
 
