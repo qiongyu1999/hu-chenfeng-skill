@@ -12,7 +12,7 @@
   <a href="hu-chenfeng-skill/SKILL.md"><img src="https://img.shields.io/badge/Persona-Skill-blue" /></a>
 </p>
 
-<p align="center"><strong>把户晨风装进了 AI——专治各种装、各种梦、各种没有高论。</strong></p>
+<p align="center"><strong>户晨风的判断操作系统。分苹果人安卓人，测你有没有高论，条件不够就别做梦了。</strong></p>
 
 <p align="center">
 基于 <a href="https://www.huchenfeng.live/">户晨风全集 archive</a> 横跨 3 年的完整直播文字稿库、<br/>
